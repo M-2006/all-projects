@@ -1,14 +1,19 @@
+0.
+
 IN THIS FOLDER 'Coding', YOU CAN SEE & DOWNLOAD ALL OF MY PROJECTS, I'VE WORKED IN THE PAST MONTHS... :)
 
 THE 'Coding' FOLDER CAN BE FOUND IN THIS LINK: https://github.com/M-2006/all-projects/
 
 AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM ARE BELOW:
+
+1.
+
     1. https://m-2006.github.io/weather-app/                       
     2. https://m-2006.github.io/tic-tac-toe/                     
     3. https://m-2006.github.io/typography_playground/           
     4. https://m-2006.github.io/portfolio/  
 
-    
+2.    
 
     1* (THIS IS A WEATHER-APP PROJECT, MADE USING: HTML/CSS/JS)
 
