@@ -1,5 +1,13 @@
 IN THIS FOLDER 'Coding', YOU CAN SEE & DOWNLOAD ALL OF MY PROJECTS, I'VE WORKED IN THE PAST MONTHS... :)
 
-THE 'Coding' FOLDER CAN BE FOUND IN THIS LINK: https://github.com/M-2006/all-projects
+THE 'Coding' FOLDER CAN BE FOUND IN THIS LINK: https://github.com/M-2006/all-projects/
+
+AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM ARE BELOW:
+    1. https://m-2006.github.io/weather-app/                       (THIS IS A WEATHER-APP PROJECT, MADE USING: HTML/CSS/JS)
+    2. https://m-2006.github.io/tic-tac-toe/                       (THIS IS A TIC-TAC-TOE GAME, MADE USING: HTML/CSS/JS)
+    3. https://m-2006.github.io/typography_playground/             (THIS A TYPOGRAPHY-PLAYGROUND, WHERE YOU CAN TEST DIFFERENT STYLES/FONTS/SIZES,...; ALSO USING: HTML/CSS/JS)
+    4. https://m-2006.github.io/portfolio/                         (AND THIS A PORTFOLIO, WHICH CONTAINS ALL OF THE PROJECTS ABOVE, MADE BY USING: HTML/CSS/JS)
+
+    P.S ALL OF THE PROJECTS HAVE BEEN MADE ALSO BY USING BOOTSTRAP.
 
 BY: MUHAMET MALIQI - muhametmaliqi@icloud.com
