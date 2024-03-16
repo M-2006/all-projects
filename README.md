@@ -11,7 +11,8 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
     1. https://m-2006.github.io/weather-app/                       
     2. https://m-2006.github.io/tic-tac-toe/                     
     3. https://m-2006.github.io/typography_playground/           
-    4. https://m-2006.github.io/portfolio/  
+    4. https://m-2006.github.io/calculator
+    5. https://m-2006.github.io/portfolio/  
 
 2.    
 
