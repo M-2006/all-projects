@@ -15,7 +15,8 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
     5. https://m-2006.github.io/portfolio/
     6. https://m-2006.github.io/rock-paper-scissors/
     7. https://m-2006.github.io/digital_cookingbook/
-    8. https://m-2006.github.io/random-number-generator
+    8. https://m-2006.github.io/random-number-generator/
+    9. https://m-2006.github.io/historical.events/
 
 2.    
 
@@ -35,6 +36,11 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
 
     8* (MY LAST LAST PROJECT: RANDOM GENERATOR APP, YOU CAN GENERATE: NUMBERS, TEXT, CHATACTERS)
 
+    9* (MY LAST PROJECT: HISTORICAL EVENTS APP, YOU CAN SEE DIFFERTEN EVENTS, LIKE: BC, AD, WW-I, WW-II, COLD-WAR, SPACE EXPLORATION, MODERN HISTORY, ETC... I USED BOOTSTRAP & MY OWN API!)
+
     P.S ALL OF THE PROJECTS HAVE BEEN MADE ALSO BY USING BOOTSTRAP. :)
+
+
+MY FIRST SLEF-MADE API: https://m-2006.github.io/api/Events.json
 
 BY: MUHAMET MALIQI - muhametmaliqi@icloud.com
