@@ -1,0 +1,8 @@
+.custom-card {
+    border-radius: 0; /* Remove border radius */
+    border: 1px solid #ddd; /* Add border */
+    margin: 20px auto; /* Center the card */
+    max-width: 800px; /* Set maximum width */
+    padding: 20px; /* Add padding */
+  }
+  
