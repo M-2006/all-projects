@@ -41,6 +41,10 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
     P.S ALL OF THE PROJECTS HAVE BEEN MADE ALSO BY USING BOOTSTRAP. :)
 
 
-MY FIRST SLEF-MADE API: https://m-2006.github.io/api/Events.json
+MY SLEF-MADE API's: 
+    1: https://m-2006.github.io/api/Events.json
+    2: https://m-2006.github.io/recipes-api/Recepies.json
+
+    
 
 BY: MUHAMET MALIQI - muhametmaliqi@icloud.com
