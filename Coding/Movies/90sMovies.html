@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./Assets/codingg.jpeg">
+<title>Movies | 90s Movies</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<style>
+  body {
+    transition: background-color 0.5s;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+  [data-theme='light'] h1 {
+    color: #000000; /* Dark text for light mode */
+  }
+
+  [data-theme='dark'] h1 {
+    color: #ffffff; /* Light text for dark mode */
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="https://icons.iconarchive.com/icons/hopstarter/mac-folders/128/Movies-icon.png" width="35" height="35" alt='Navbar Logo'/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="90sMovies.html">90's Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="00sMovies.html">2000's - 2009's Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="010sMovies.html">2010's - 2020's Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="TV-Shows.html">TV-Shows</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link" onclick="toggleTheme()">
+              <i id="themeIcon" class="fas fa-lg"></i>
+          </button>
+      </li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="app" class="container"></div>
+
+<script>
+  let currentTheme = localStorage.getItem("theme") || "light";
+  setTheme(currentTheme);
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.body.style.backgroundColor = theme === "dark" ? "#333333" : "#ffffff";
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("navbar-dark", theme === "dark");
+    navbar.classList.toggle("bg-dark", theme === "dark");
+    localStorage.setItem("theme", theme);
+    currentTheme = theme;
+  }
+
+  function toggleTheme() {
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+
+    // Change icon based on the new theme
+    const themeIcon = document.getElementById("themeIcon");
+    themeIcon.innerHTML = newTheme === "dark" ? '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>' : '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>';
+}
+
+  async function fetchMovies() {
+    try {
+      const response = await fetch('https://m-2006.github.io/api-movies/movies-db.json');
+      const data = await response.json();
+      const filteredMovies = data.filter(movie => {
+        const year = parseInt(movie.published);
+        return year >= 1990 && year <= 1999;
+      });
+      return filteredMovies;
+    } catch (error) {
+      console.error('Error fetching movie data: ', error);
+      return [];
+    }
+  }
+
+  async function renderMovies() {
+    const movies = await fetchMovies();
+    const textColor = currentTheme === 'light' ? 'text-dark' : 'text-light';
+    const app = document.getElementById('app');
+    app.innerHTML = `
+        <h1 class="mt-4" style="color: ${textColor}">Movies from 1990 to 1999</h1>
+        <div class="row">
+        ${movies.map(movie => `
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <img src="${movie.poster}" height="500" class="card-img-top" alt="${movie.title}">
+                <div class="card-body">
+                <h5 class="card-title">${movie.title} (${movie.published})</h5>
+                <h5 class="card-title">Runtime: ${movie.runtime}</h5>
+                <p class="card-text">${movie.plot}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Director: ${movie.director}</li>
+                <li class="list-group-item">Cast: ${movie.cast}</li>
+                <li class="list-group-item">IMDb Rating: ${movie['IMDb-Rating']}</li>
+                </ul>
+            </div>
+            </div>
+        `).join('')}
+        </div>
+    `;
+  }
+  renderMovies();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <span class="text-white">&copy; <script>document.write(new Date().getFullYear())</script>. Mvies / TV-Series App!</span>
+      <nav>
+        <ul class="nav justify-content-center mt-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="90sMovies.html" class="nav-link text-white">90's Movies</a>
+          </li>
+          <li class="nav-item">
+            <a href="00sMovies.html" class="nav-link text-white">2000's - 2009's Movies</a>
+          </li>
+          <li class="nav-item">
+            <a href="010sMovies.html" class="nav-link text-white">2010's - 2020's Movies</a>
+          </li>
+          <li class="nav-item">
+            <a href="TV-Shows.html" class="nav-link text-white">TV-Shows</a>
+          </li>
+        </ul>
+      </nav>
+      <button  
+        class="btn btn-dark"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;"
+        onclick="scrollToTop()"
+      ><svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></button>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  </script>
+</body>
+</html>
