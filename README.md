@@ -17,6 +17,7 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
     7. https://m-2006.github.io/digital_cookingbook/
     8. https://m-2006.github.io/random-number-generator/
     9. https://m-2006.github.io/historical.events/
+    10. https://m-2006.github.io/movies/
 
 2.    
 
@@ -38,13 +39,23 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
 
     9* (MY LAST PROJECT: HISTORICAL EVENTS APP, YOU CAN SEE DIFFERTEN EVENTS, LIKE: BC, AD, WW-I, WW-II, COLD-WAR, SPACE EXPLORATION, MODERN HISTORY, ETC... I USED BOOTSTRAP & MY OWN API!)
 
+    10* (MY LAST PROCEJT: MOVIES APP, YOU CAN SEE DIFFERENT MOVIES INFORMATION, ALSO THERE ARE SOME TV-SHOWS AS WELL; ALSO IN THIS PROJECT I USED: BOOTSTRAP & A API CREATED BY ME)
+
     P.S ALL OF THE PROJECTS HAVE BEEN MADE ALSO BY USING BOOTSTRAP. :)
+
+    
 
 
 MY SLEF-MADE API's: 
     1: https://m-2006.github.io/api/Events.json
     2: https://m-2006.github.io/recipes-api/Recepies.json
+    3: https://m-2006.github.io/api-movies/movies-db.json
+    4: https://m-2006.github.io/api-movies/Movies.json
+    5: https://m-2006.github.io/api-movies/250movies.json
+    6: https://m-2006.github.io/api-movies/Films.json
 
     
 
-BY: MUHAMET MALIQI - muhametmaliqi@icloud.com
+
+
+/* BY: MUHAMET MALIQI - muhametmaliqi@icloud.com  */
