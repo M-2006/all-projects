@@ -12,7 +12,7 @@ AND ALSO ALL OF THE PROJECTS ARE PUBLISHED IN THE GITHUB-PAGES, THE LINK TO THEM
     2. https://m-2006.github.io/tic-tac-toe/                     
     3. https://m-2006.github.io/typography_playground/           
     4. https://m-2006.github.io/calculator/
-    5. https://m-2006.github.io/portfolio/
+    5. https://m-2006.github.io/portfolio-Muhamet-Maliqi/Pages/index.html
     6. https://m-2006.github.io/rock-paper-scissors/
     7. https://m-2006.github.io/digital_cookingbook/
     8. https://m-2006.github.io/random-number-generator/
